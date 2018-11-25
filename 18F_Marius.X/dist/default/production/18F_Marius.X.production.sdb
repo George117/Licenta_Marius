@@ -1,0 +1,366 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F46K22 ]
+[d frameptr 4065 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"14 D:\GIT\Licenta_Marius\18F_Marius.X\config.c
+[v _config config `(v  1 e 1 0 ]
+"19 D:\GIT\Licenta_Marius\18F_Marius.X\i2c_display.c
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+"25
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"44
+[v _Lcd_Clear Lcd_Clear `(v  1 e 1 0 ]
+"50
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+"71
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+"90
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+"114
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+"139
+[v _Cursor_Off Cursor_Off `(v  1 e 1 0 ]
+"164
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+"174
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+"181
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+"193
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+"205
+[v _I2C_Write_Display I2C_Write_Display `(v  1 e 1 0 ]
+"15 D:\GIT\Licenta_Marius\18F_Marius.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"50 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k22.h
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"95
+[v _ANSELB ANSELB `VEuc  1 e 1 @3897 ]
+"145
+[v _ANSELC ANSELC `VEuc  1 e 1 @3898 ]
+"196
+[v _ANSELD ANSELD `VEuc  1 e 1 @3899 ]
+"258
+[v _ANSELE ANSELE `VEuc  1 e 1 @3900 ]
+"6278
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"6563
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"6833
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"7140
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"7383
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+"7558
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"7670
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"7782
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"7894
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S417 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"7921
+[s S426 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S435 . 1 `S417 1 . 1 0 `S426 1 . 1 0 ]
+[v _LATDbits LATDbits `VES435  1 e 1 @3980 ]
+"8006
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"8058
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"8280
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"8502
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S148 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"8534
+[s S157 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S166 . 1 `S148 1 . 1 0 `S157 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES166  1 e 1 @3988 ]
+"8724
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"8946
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S53 . 1 `uc 1 TUN 1 0 :6:0 
+`uc 1 PLLEN 1 0 :1:6 
+`uc 1 INTSRC 1 0 :1:7 
+]
+"9082
+[s S57 . 1 `uc 1 TUN0 1 0 :1:0 
+`uc 1 TUN1 1 0 :1:1 
+`uc 1 TUN2 1 0 :1:2 
+`uc 1 TUN3 1 0 :1:3 
+`uc 1 TUN4 1 0 :1:4 
+`uc 1 TUN5 1 0 :1:5 
+]
+[u S64 . 1 `S53 1 . 1 0 `S57 1 . 1 0 ]
+[v _OSCTUNEbits OSCTUNEbits `VES64  1 e 1 @3995 ]
+"13781
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @4037 ]
+[s S291 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"13829
+[s S300 . 1 `uc 1 SEN1 1 0 :1:0 
+`uc 1 ADMSK1 1 0 :1:1 
+`uc 1 ADMSK2 1 0 :1:2 
+`uc 1 ADMSK3 1 0 :1:3 
+`uc 1 ACKEN1 1 0 :1:4 
+`uc 1 ACKDT1 1 0 :1:5 
+`uc 1 ACKSTAT1 1 0 :1:6 
+`uc 1 GCEN1 1 0 :1:7 
+]
+[s S309 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK11 1 0 :1:1 
+`uc 1 ADMSK21 1 0 :1:2 
+`uc 1 ADMSK31 1 0 :1:3 
+`uc 1 ADMSK4 1 0 :1:4 
+`uc 1 ADMSK5 1 0 :1:5 
+]
+[s S316 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RSEN1 1 0 :1:1 
+`uc 1 PEN1 1 0 :1:2 
+`uc 1 RCEN1 1 0 :1:3 
+`uc 1 ADMSK41 1 0 :1:4 
+`uc 1 ADMSK51 1 0 :1:5 
+]
+[u S323 . 1 `S291 1 . 1 0 `S300 1 . 1 0 `S309 1 . 1 0 `S316 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES323  1 e 1 @4037 ]
+"14135
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @4038 ]
+"14373
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @4039 ]
+"15003
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @4040 ]
+"15257
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @4041 ]
+"15262
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+[s S21 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 HFIOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"16067
+[s S27 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 IOFS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S35 . 1 `S21 1 . 1 0 `S27 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES35  1 e 1 @4051 ]
+[s S79 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"16956
+[s S88 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S97 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S101 . 1 `S79 1 . 1 0 `S88 1 . 1 0 `S97 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES101  1 e 1 @4082 ]
+"15 D:\GIT\Licenta_Marius\18F_Marius.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"25
+[v main@i i `i  1 a 2 25 ]
+"36
+} 0
+"14 D:\GIT\Licenta_Marius\18F_Marius.X\config.c
+[v _config config `(v  1 e 1 0 ]
+{
+"54
+} 0
+"114 D:\GIT\Licenta_Marius\18F_Marius.X\i2c_display.c
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+{
+"116
+[v Lcd_Write_String@i i `i  1 a 2 11 ]
+"114
+[v Lcd_Write_String@a a `*.32uc  1 p 2 7 ]
+"119
+} 0
+"90
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+{
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"92
+[v Lcd_Write_Char@temp temp `uc  1 a 1 6 ]
+[v Lcd_Write_Char@y y `uc  1 a 1 5 ]
+"90
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"93
+[v Lcd_Write_Char@a a `uc  1 a 1 4 ]
+"112
+} 0
+"50
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+{
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+"52
+[v Lcd_Set_Cursor@temp temp `uc  1 a 1 14 ]
+[v Lcd_Set_Cursor@y y `uc  1 a 1 13 ]
+[v Lcd_Set_Cursor@z z `uc  1 a 1 12 ]
+"50
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+[v Lcd_Set_Cursor@b b `uc  1 p 1 10 ]
+"53
+[v Lcd_Set_Cursor@a a `uc  1 a 1 11 ]
+"69
+} 0
+"71
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+{
+"88
+} 0
+"44
+[v _Lcd_Clear Lcd_Clear `(v  1 e 1 0 ]
+{
+"48
+} 0
+"164
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+{
+[v I2C_Master_Init@c c `Cul  1 p 4 13 ]
+"172
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"8
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"31
+} 0
+"139 D:\GIT\Licenta_Marius\18F_Marius.X\i2c_display.c
+[v _Cursor_Off Cursor_Off `(v  1 e 1 0 ]
+{
+"143
+} 0
+"25
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+"27
+[v Lcd_Cmd@buff buff `i  1 a 2 7 ]
+"25
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+"28
+[v Lcd_Cmd@a a `uc  1 a 1 9 ]
+"42
+} 0
+"19
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+{
+"20
+[v Lcd_Port@data data `uc  1 a 1 wreg ]
+[v Lcd_Port@data data `uc  1 a 1 wreg ]
+[v Lcd_Port@data data `uc  1 a 1 3 ]
+"24
+} 0
+"205
+[v _I2C_Write_Display I2C_Write_Display `(v  1 e 1 0 ]
+{
+[v I2C_Write_Display@d d `ui  1 p 2 1 ]
+"209
+} 0
+"193
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+{
+"197
+} 0
+"181
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+{
+"185
+} 0
+"174
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+{
+"179
+} 0

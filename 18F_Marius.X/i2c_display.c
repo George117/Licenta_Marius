@@ -10,7 +10,7 @@
 #define EN0 0x00//00 
 #define EN1 0x04//04
 #define BGL 0x00
-#define _XTAL_FREQ 64000000
+#define _XTAL_FREQ 16000000
 #include <xc.h>
 #include "i2c_display.h"
 

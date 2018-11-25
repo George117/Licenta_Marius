@@ -8560,14 +8560,15 @@ void Cursor_Off();
 void Cursor_Left();
 void Cursor_Right();
 
-# 14 "config.c"
+# 15 "config.c"
 void config()
 {
 
+int cor;
 OSCCONbits.IRCF0=1;
 OSCCONbits.IRCF1=1;
 OSCCONbits.IRCF2=1;
-OSCTUNEbits.PLLEN = 1;
+OSCTUNEbits.PLLEN = 0;
 INTCONbits.GIE=0;
 
 ANSELA=0X00;
@@ -8594,12 +8595,58 @@ LATE=0X00;
 TRISCbits.TRISC3=1;
 TRISCbits.TRISC4=1;
 I2C_Master_Init(100000);
-_delay((unsigned long)((100)*(64000000/4000.0)));
+_delay((unsigned long)((100)*(16000000/4000.0)));
 Lcd_Init();
 Lcd_Clear();
 Cursor_Off();
 Lcd_Set_Cursor(1,1);
 Lcd_Write_String("Test");
-_delay((unsigned long)((100)*(64000000/4000.0)));
+_delay((unsigned long)((100)*(16000000/4000.0)));
+
+
+T1CON=0x30;
+T1GCON=0x40;
+
+
+
+TRISBbits.TRISB4=1;
+TRISBbits.TRISB5=1;
+TRISBbits.TRISB6=1;
+
+RCONbits.IPEN=0;
+INTCONbits.GIE=1;
+INTCONbits.PEIE=1;
+
+
+INTCONbits.RBIE=0;
+INTCON2bits.RBIP=0;
+cor=PORTB;
+INTCONbits.RBIF=0;
+
+IOCBbits.IOCB4=1;
+IOCBbits.IOCB5=1;
+IOCBbits.IOCB6=1;
+IOCBbits.IOCB7=0;
+
+INTCON2bits.NOT_RBPU=1;
+
+
+
+INTCON2bits.INTEDG0=1;
+INTCON2bits.INTEDG1=1;
+INTCON2bits.INTEDG2=1;
+
+INTCONbits.INT0IE=0;
+INTCON3bits.INT1IE=0;
+INTCON3bits.INT2IE=0;
+
+INTCONbits.INT0IF=0;
+INTCON3bits.INT1IF=0;
+INTCON3bits.INT2IF=0;
+
+# 105
+PIE1bits.RC1IE=0;
+
+# 111
 }
 

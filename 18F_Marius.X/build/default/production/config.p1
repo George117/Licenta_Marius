@@ -102,6 +102,91 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _Lcd_Set_Cursor `(v ~T0 @X0 0 ef2`uc`uc ]
 "53
 [v _Lcd_Write_String `(v ~T0 @X0 0 ef1`*uc ]
+"15666 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k22.h
+[v _T1CON `Vuc ~T0 @X0 0 e@4045 ]
+"15571
+[v _T1GCON `Vuc ~T0 @X0 0 e@4044 ]
+"8291
+[s S396 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S396 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"8301
+[s S397 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S397 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"8290
+[u S395 `S396 1 `S397 1 ]
+[n S395 . . . ]
+"8312
+[v _TRISBbits `VS395 ~T0 @X0 0 e@3987 ]
+"15832
+[s S748 :1 `uc 1 ]
+[n S748 . NOT_BOR ]
+"15835
+[s S749 :1 `uc 1 :1 `uc 1 ]
+[n S749 . . NOT_POR ]
+"15839
+[s S750 :2 `uc 1 :1 `uc 1 ]
+[n S750 . . NOT_PD ]
+"15843
+[s S751 :3 `uc 1 :1 `uc 1 ]
+[n S751 . . NOT_TO ]
+"15847
+[s S752 :4 `uc 1 :1 `uc 1 ]
+[n S752 . . NOT_RI ]
+"15851
+[s S753 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S753 . nBOR nPOR nPD nTO nRI . SBOREN IPEN ]
+"15861
+[s S754 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S754 . BOR POR PD TO RI ]
+"15831
+[u S747 `S748 1 `S749 1 `S750 1 `S751 1 `S752 1 `S753 1 `S754 1 ]
+[n S747 . . . . . . . . ]
+"15869
+[v _RCONbits `VS747 ~T0 @X0 0 e@4048 ]
+"16860
+[s S817 :7 `uc 1 :1 `uc 1 ]
+[n S817 . . NOT_RBPU ]
+"16864
+[s S818 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S818 . RBIP . TMR0IP . INTEDG2 INTEDG1 INTEDG0 nRBPU ]
+"16874
+[s S819 :7 `uc 1 :1 `uc 1 ]
+[n S819 . . RBPU ]
+"16859
+[u S816 `S817 1 `S818 1 `S819 1 ]
+[n S816 . . . . ]
+"16879
+[v _INTCON2bits `VS816 ~T0 @X0 0 e@4081 ]
+"2785
+[s S134 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S134 . . IOCB4 IOCB5 IOCB6 IOCB7 ]
+"2784
+[u S133 `S134 1 ]
+[n S133 . . ]
+"2793
+[v _IOCBbits `VS133 ~T0 @X0 0 e@3938 ]
+"16768
+[s S814 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S814 . INT1IF INT2IF . INT1IE INT2IE . INT1IP INT2IP ]
+"16778
+[s S815 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S815 . INT1F INT2F . INT1E INT2E . INT1P INT2P ]
+"16767
+[u S813 `S814 1 `S815 1 ]
+[n S813 . . . ]
+"16789
+[v _INTCON3bits `VS813 ~T0 @X0 0 e@4080 ]
+"9418
+[s S433 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S433 . TMR1IE TMR2IE CCP1IE SSP1IE TX1IE RC1IE ADIE ]
+"9427
+[s S434 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S434 . . SSPIE TXIE RCIE ]
+"9417
+[u S432 `S433 1 `S434 1 ]
+[n S432 . . . ]
+"9434
+[v _PIE1bits `VS432 ~T0 @X0 0 e@3997 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -6762,121 +6847,205 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;i2c_display.h: 57: void Cursor_Off();
 [; ;i2c_display.h: 58: void Cursor_Left();
 [; ;i2c_display.h: 59: void Cursor_Right();
-"14 config.c
+"15 config.c
 [v _config `(v ~T0 @X0 1 ef ]
-"15
+"16
 {
-[; ;config.c: 14: void config()
-[; ;config.c: 15: {
+[; ;config.c: 15: void config()
+[; ;config.c: 16: {
 [e :U _config ]
 [f ]
-[; ;config.c: 17: OSCCONbits.IRCF0=1;
-"17
-[e = . . _OSCCONbits 1 4 -> -> 1 `i `uc ]
-[; ;config.c: 18: OSCCONbits.IRCF1=1;
 "18
-[e = . . _OSCCONbits 1 5 -> -> 1 `i `uc ]
-[; ;config.c: 19: OSCCONbits.IRCF2=1;
+[v _cor `i ~T0 @X0 1 a ]
+[; ;config.c: 18: int cor;
+[; ;config.c: 19: OSCCONbits.IRCF0=1;
 "19
-[e = . . _OSCCONbits 1 6 -> -> 1 `i `uc ]
-[; ;config.c: 20: OSCTUNEbits.PLLEN = 1;
+[e = . . _OSCCONbits 1 4 -> -> 1 `i `uc ]
+[; ;config.c: 20: OSCCONbits.IRCF1=1;
 "20
-[e = . . _OSCTUNEbits 0 1 -> -> 1 `i `uc ]
-[; ;config.c: 21: INTCONbits.GIE=0;
+[e = . . _OSCCONbits 1 5 -> -> 1 `i `uc ]
+[; ;config.c: 21: OSCCONbits.IRCF2=1;
 "21
-[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
-[; ;config.c: 23: ANSELA=0X00;
+[e = . . _OSCCONbits 1 6 -> -> 1 `i `uc ]
+[; ;config.c: 22: OSCTUNEbits.PLLEN = 0;
+"22
+[e = . . _OSCTUNEbits 0 1 -> -> 0 `i `uc ]
+[; ;config.c: 23: INTCONbits.GIE=0;
 "23
-[e = _ANSELA -> -> 0 `i `uc ]
-[; ;config.c: 24: ANSELB=0X00;
-"24
-[e = _ANSELB -> -> 0 `i `uc ]
-[; ;config.c: 25: ANSELC=0X00;
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
+[; ;config.c: 25: ANSELA=0X00;
 "25
-[e = _ANSELC -> -> 0 `i `uc ]
-[; ;config.c: 26: ANSELD=0X00;
+[e = _ANSELA -> -> 0 `i `uc ]
+[; ;config.c: 26: ANSELB=0X00;
 "26
-[e = _ANSELD -> -> 0 `i `uc ]
-[; ;config.c: 27: ANSELE=0X00;
+[e = _ANSELB -> -> 0 `i `uc ]
+[; ;config.c: 27: ANSELC=0X00;
 "27
-[e = _ANSELE -> -> 0 `i `uc ]
-[; ;config.c: 28: TRISA=0X00;
+[e = _ANSELC -> -> 0 `i `uc ]
+[; ;config.c: 28: ANSELD=0X00;
 "28
-[e = _TRISA -> -> 0 `i `uc ]
-[; ;config.c: 29: TRISB=0X00;
+[e = _ANSELD -> -> 0 `i `uc ]
+[; ;config.c: 29: ANSELE=0X00;
 "29
-[e = _TRISB -> -> 0 `i `uc ]
-[; ;config.c: 30: TRISC=0X00;
+[e = _ANSELE -> -> 0 `i `uc ]
+[; ;config.c: 30: TRISA=0X00;
 "30
-[e = _TRISC -> -> 0 `i `uc ]
-[; ;config.c: 31: TRISD=0X00;
+[e = _TRISA -> -> 0 `i `uc ]
+[; ;config.c: 31: TRISB=0X00;
 "31
-[e = _TRISD -> -> 0 `i `uc ]
-[; ;config.c: 32: TRISE=0X00;
+[e = _TRISB -> -> 0 `i `uc ]
+[; ;config.c: 32: TRISC=0X00;
 "32
-[e = _TRISE -> -> 0 `i `uc ]
-[; ;config.c: 33: PORTA=0X00;
+[e = _TRISC -> -> 0 `i `uc ]
+[; ;config.c: 33: TRISD=0X00;
 "33
-[e = _PORTA -> -> 0 `i `uc ]
-[; ;config.c: 34: PORTB=0X00;
+[e = _TRISD -> -> 0 `i `uc ]
+[; ;config.c: 34: TRISE=0X00;
 "34
-[e = _PORTB -> -> 0 `i `uc ]
-[; ;config.c: 35: PORTC=0X00;
+[e = _TRISE -> -> 0 `i `uc ]
+[; ;config.c: 35: PORTA=0X00;
 "35
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;config.c: 36: PORTD=0X00;
+[e = _PORTA -> -> 0 `i `uc ]
+[; ;config.c: 36: PORTB=0X00;
 "36
-[e = _PORTD -> -> 0 `i `uc ]
-[; ;config.c: 37: PORTE=0X00;
+[e = _PORTB -> -> 0 `i `uc ]
+[; ;config.c: 37: PORTC=0X00;
 "37
-[e = _PORTE -> -> 0 `i `uc ]
-[; ;config.c: 38: LATA=0X00;
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;config.c: 38: PORTD=0X00;
 "38
-[e = _LATA -> -> 0 `i `uc ]
-[; ;config.c: 39: LATB=0X00;
+[e = _PORTD -> -> 0 `i `uc ]
+[; ;config.c: 39: PORTE=0X00;
 "39
-[e = _LATB -> -> 0 `i `uc ]
-[; ;config.c: 40: LATC=0X00;
+[e = _PORTE -> -> 0 `i `uc ]
+[; ;config.c: 40: LATA=0X00;
 "40
-[e = _LATC -> -> 0 `i `uc ]
-[; ;config.c: 41: LATD=0X00;
+[e = _LATA -> -> 0 `i `uc ]
+[; ;config.c: 41: LATB=0X00;
 "41
-[e = _LATD -> -> 0 `i `uc ]
-[; ;config.c: 42: LATE=0X00;
+[e = _LATB -> -> 0 `i `uc ]
+[; ;config.c: 42: LATC=0X00;
 "42
-[e = _LATE -> -> 0 `i `uc ]
-[; ;config.c: 44: TRISCbits.TRISC3=1;
+[e = _LATC -> -> 0 `i `uc ]
+[; ;config.c: 43: LATD=0X00;
+"43
+[e = _LATD -> -> 0 `i `uc ]
+[; ;config.c: 44: LATE=0X00;
 "44
-[e = . . _TRISCbits 0 3 -> -> 1 `i `uc ]
-[; ;config.c: 45: TRISCbits.TRISC4=1;
-"45
-[e = . . _TRISCbits 0 4 -> -> 1 `i `uc ]
-[; ;config.c: 46: I2C_Master_Init(100000);
+[e = _LATE -> -> 0 `i `uc ]
+[; ;config.c: 46: TRISCbits.TRISC3=1;
 "46
-[e ( _I2C_Master_Init (1 -> -> 100000 `l `ul ]
-[; ;config.c: 47: _delay((unsigned long)((100)*(64000000/4000.0)));
+[e = . . _TRISCbits 0 3 -> -> 1 `i `uc ]
+[; ;config.c: 47: TRISCbits.TRISC4=1;
 "47
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-[; ;config.c: 48: Lcd_Init();
+[e = . . _TRISCbits 0 4 -> -> 1 `i `uc ]
+[; ;config.c: 48: I2C_Master_Init(100000);
 "48
-[e ( _Lcd_Init ..  ]
-[; ;config.c: 49: Lcd_Clear();
+[e ( _I2C_Master_Init (1 -> -> 100000 `l `ul ]
+[; ;config.c: 49: _delay((unsigned long)((100)*(16000000/4000.0)));
 "49
-[e ( _Lcd_Clear ..  ]
-[; ;config.c: 50: Cursor_Off();
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+[; ;config.c: 50: Lcd_Init();
 "50
-[e ( _Cursor_Off ..  ]
-[; ;config.c: 51: Lcd_Set_Cursor(1,1);
+[e ( _Lcd_Init ..  ]
+[; ;config.c: 51: Lcd_Clear();
 "51
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-[; ;config.c: 52: Lcd_Write_String("Test");
+[e ( _Lcd_Clear ..  ]
+[; ;config.c: 52: Cursor_Off();
 "52
-[e ( _Lcd_Write_String (1 -> :s 1C `*uc ]
-[; ;config.c: 53: _delay((unsigned long)((100)*(64000000/4000.0)));
+[e ( _Cursor_Off ..  ]
+[; ;config.c: 53: Lcd_Set_Cursor(1,1);
 "53
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-[; ;config.c: 54: }
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;config.c: 54: Lcd_Write_String("Test");
 "54
+[e ( _Lcd_Write_String (1 -> :s 1C `*uc ]
+[; ;config.c: 55: _delay((unsigned long)((100)*(16000000/4000.0)));
+"55
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+[; ;config.c: 58: T1CON=0x30;
+"58
+[e = _T1CON -> -> 48 `i `uc ]
+[; ;config.c: 59: T1GCON=0x40;
+"59
+[e = _T1GCON -> -> 64 `i `uc ]
+[; ;config.c: 63: TRISBbits.TRISB4=1;
+"63
+[e = . . _TRISBbits 0 4 -> -> 1 `i `uc ]
+[; ;config.c: 64: TRISBbits.TRISB5=1;
+"64
+[e = . . _TRISBbits 0 5 -> -> 1 `i `uc ]
+[; ;config.c: 65: TRISBbits.TRISB6=1;
+"65
+[e = . . _TRISBbits 0 6 -> -> 1 `i `uc ]
+[; ;config.c: 67: RCONbits.IPEN=0;
+"67
+[e = . . _RCONbits 5 7 -> -> 0 `i `uc ]
+[; ;config.c: 68: INTCONbits.GIE=1;
+"68
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+[; ;config.c: 69: INTCONbits.PEIE=1;
+"69
+[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
+[; ;config.c: 72: INTCONbits.RBIE=0;
+"72
+[e = . . _INTCONbits 0 3 -> -> 0 `i `uc ]
+[; ;config.c: 73: INTCON2bits.RBIP=0;
+"73
+[e = . . _INTCON2bits 1 0 -> -> 0 `i `uc ]
+[; ;config.c: 74: cor=PORTB;
+"74
+[e = _cor -> _PORTB `i ]
+[; ;config.c: 75: INTCONbits.RBIF=0;
+"75
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+[; ;config.c: 77: IOCBbits.IOCB4=1;
+"77
+[e = . . _IOCBbits 0 1 -> -> 1 `i `uc ]
+[; ;config.c: 78: IOCBbits.IOCB5=1;
+"78
+[e = . . _IOCBbits 0 2 -> -> 1 `i `uc ]
+[; ;config.c: 79: IOCBbits.IOCB6=1;
+"79
+[e = . . _IOCBbits 0 3 -> -> 1 `i `uc ]
+[; ;config.c: 80: IOCBbits.IOCB7=0;
+"80
+[e = . . _IOCBbits 0 4 -> -> 0 `i `uc ]
+[; ;config.c: 82: INTCON2bits.NOT_RBPU=1;
+"82
+[e = . . _INTCON2bits 0 1 -> -> 1 `i `uc ]
+[; ;config.c: 86: INTCON2bits.INTEDG0=1;
+"86
+[e = . . _INTCON2bits 1 6 -> -> 1 `i `uc ]
+[; ;config.c: 87: INTCON2bits.INTEDG1=1;
+"87
+[e = . . _INTCON2bits 1 5 -> -> 1 `i `uc ]
+[; ;config.c: 88: INTCON2bits.INTEDG2=1;
+"88
+[e = . . _INTCON2bits 1 4 -> -> 1 `i `uc ]
+[; ;config.c: 90: INTCONbits.INT0IE=0;
+"90
+[e = . . _INTCONbits 0 4 -> -> 0 `i `uc ]
+[; ;config.c: 91: INTCON3bits.INT1IE=0;
+"91
+[e = . . _INTCON3bits 0 3 -> -> 0 `i `uc ]
+[; ;config.c: 92: INTCON3bits.INT2IE=0;
+"92
+[e = . . _INTCON3bits 0 4 -> -> 0 `i `uc ]
+[; ;config.c: 94: INTCONbits.INT0IF=0;
+"94
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+[; ;config.c: 95: INTCON3bits.INT1IF=0;
+"95
+[e = . . _INTCON3bits 0 0 -> -> 0 `i `uc ]
+[; ;config.c: 96: INTCON3bits.INT2IF=0;
+"96
+[e = . . _INTCON3bits 0 1 -> -> 0 `i `uc ]
+[; ;config.c: 105: PIE1bits.RC1IE=0;
+"105
+[e = . . _PIE1bits 0 5 -> -> 0 `i `uc ]
+[; ;config.c: 111: }
+"111
 [e :UE 849 ]
 }
 [a 1C 84 101 115 116 0 ]

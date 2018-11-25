@@ -8521,7 +8521,7 @@ Lcd_Port(a);
 
 buff=a | 0x00 | 0x04 | 0x00;
 Lcd_Port(buff);
-_delay((unsigned long)((4)*(64000000/4000.0)));
+_delay((unsigned long)((4)*(16000000/4000.0)));
 
 buff=a | 0x00 | 0x00 | 0x00;
 Lcd_Port(buff);
@@ -8557,11 +8557,11 @@ Lcd_Cmd(y);
 void Lcd_Init()
 {
 Lcd_Port(0x00);
-_delay((unsigned long)((20)*(64000000/4000.0)));
+_delay((unsigned long)((20)*(16000000/4000.0)));
 Lcd_Cmd(0x03);
-_delay((unsigned long)((5)*(64000000/4000.0)));
+_delay((unsigned long)((5)*(16000000/4000.0)));
 Lcd_Cmd(0x03);
-_delay((unsigned long)((11)*(64000000/4000.0)));
+_delay((unsigned long)((11)*(16000000/4000.0)));
 Lcd_Cmd(0x03);
 
 Lcd_Cmd(0x02);
@@ -8585,14 +8585,14 @@ Lcd_Port(0x00 | 0x01 | 0x00 | 0x00);
 Lcd_Port(y);
 
 Lcd_Port(y | 0x01 | 0x04 | 0x00);
-_delay((unsigned long)((40)*(64000000/4000000.0)));
+_delay((unsigned long)((40)*(16000000/4000000.0)));
 
 Lcd_Port(y | 0x01 | 0x00 | 0x00);
 Lcd_Port(temp);
 
 
 Lcd_Port(temp | 0x01 | 0x04 | 0x00);
-_delay((unsigned long)((40)*(64000000/4000000.0)));
+_delay((unsigned long)((40)*(16000000/4000000.0)));
 
 Lcd_Port(temp | 0x01 | 0x00 | 0x00);
 }
@@ -8645,7 +8645,7 @@ void I2C_Master_Init(const unsigned long c)
 {
 SSP1CON1 = 0b00101000;
 SSP1CON2 = 0x00;
-SSP1ADD = (64000000/(4*c))-1;
+SSP1ADD = (16000000/(4*c))-1;
 SSP1STAT = 0x00;
 TRISCbits.TRISC3=1;
 TRISCbits.TRISC4=1;

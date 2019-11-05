@@ -1,0 +1,3 @@
+[submodule "Display"]
+	path = Display
+	url = https://github.com/George117/PIC18F46K22_HD44780_I2C.git
